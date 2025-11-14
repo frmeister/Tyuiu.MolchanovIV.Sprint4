@@ -6,30 +6,30 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.MolchanovIV.Sprint4.Task0.V23.Lib;
+using Tyuiu.MolchanovIV.Sprint4.Task1.V17.Lib;
 
-namespace Tyuiu.MolchanovIV.Sprint4.Task0.V23
+namespace Tyuiu.MolchanovIV.Sprint4.Task1.V17
 {
-    class Programm
+    class Program
     {
-        public static void main(string[] args)
+        static public void Main(string[] args)
         {
             DataService ds = new DataService();
 
-            int[] arr = new int[] { 9, 3, 7, 1, 5, 5, 3, 2, 1, 7 };
+            int[] arr = new int[] { 1, 7, 6, 3, 2, 5, 7, 6, 7, 6, 5, 4, 7, 6 };
 
             Console.Title = "Спринт #4 | Выполнил: Молчанов И. В. | РППб-25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #4                                                               *");
             Console.WriteLine("* Тема: Обработка структурных типов                                       *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #23                                                             *");
+            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Вариант #17                                                             *");
             Console.WriteLine("* Выполнил: Молчанов Иван Владимирович | РППБ-25-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дан одномерный целочисленный массив на 10 элементов заполненный         *");
-            Console.WriteLine("* статическими значениями в диапазоне от 0 до 9 подсчитать произведение   *");
-            Console.WriteLine("* нечетных элементов массива. {9 ,3 ,7 ,1 ,5 ,5 ,3 ,2 ,1 ,7}              *");
+            Console.WriteLine("* Дан одномерный целочисленный массив на 14 элементов заполненный         *");
+            Console.WriteLine("* значениями с клавиатуры в диапазоне от 1 до 7 подсчитать сумму четных   *");
+            Console.WriteLine("* элементов массива. С клавиатуры: 1,7,6,3,2,5,7,6,7,6,5,4,7,6            *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
@@ -46,7 +46,7 @@ namespace Tyuiu.MolchanovIV.Sprint4.Task0.V23
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.GetMultOddArrEl(arr));
+            Console.WriteLine(ds.Calculate(arr));
 
         }
     }
