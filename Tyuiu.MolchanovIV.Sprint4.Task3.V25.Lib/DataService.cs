@@ -14,7 +14,7 @@ namespace Tyuiu.MolchanovIV.Sprint4.Task3.V25.Lib
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    if (j == 4) res *= array[i, j];
+                    if (j == 3) res *= array[i, j];
                 }
             }
 
