@@ -11,7 +11,7 @@ namespace Tyuiu.MolchanovIV.Sprint4.Task1.V17.Lib
 
             for (int i = 0; i <= array.Length - 1; i++)
             {
-                if ((i != 0) && (i % 2 == 0)) res += array[i];
+                if (array[i] % 2 == 0) res += array[i];
             }
 
             return res;
